@@ -1,6 +1,6 @@
 :root {
     --gold: #e6b102;
-    --gray: #353B3C;
+    --gray: #253237;
 }
 
 * {
@@ -96,19 +96,51 @@
     justify-content: center;
     height: 100%;
     width: 100vw;
-    margin: 0;
-    padding: 0;
     text-align: center;
     flex-direction: column;
-    background-color: #2532376b;
+    background-color: #25323779;
 }
 
 .home .content {
     width: 100%;
+    color: white;
 }
 
 #home .content h1 {
-    font-size: 60px;
+    font-size: 80px;
     color: var(--gold);
     margin-bottom: 60px;
+}
+
+
+/* This part is optional, maybe for additional features */
+#home .content h1::after {
+    content: "#";
+    /* animation: textchange 10s linear infinite; */
+}
+
+@keyframes textchange {
+    25% {
+        content: "*";
+    }
+    50% {
+        content: "$";
+    }
+    75% {
+        content: "@";
+    }
+}
+
+.sm a {
+    color: white;
+    font-size: 30px;
+    margin: 0 20px;
+    transition: .2s linear;
+    padding: 10px;
+}
+
+.sm a:hover {
+    background-color: var(--gray);
+    color: var(--gold);
+    border-radius: 10px;
 }
