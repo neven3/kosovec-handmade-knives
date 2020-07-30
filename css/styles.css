@@ -193,6 +193,25 @@
     border-radius: 10px;
 }
 
+section#home {
+    display: none;
+}
+
+.navbar {
+    display: none;
+}
+
+section:not(#home) {
+    padding: 100px 0;
+    background-color: #ebebeb;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 80px;
+    position: relative;
+}
+
 /* Mobile phone and tablets */
 @media screen and (max-width: 980px) {
     #home .content h1 {
