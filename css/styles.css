@@ -32,6 +32,7 @@
 }
 
 .navbar .inner-width {
+    max-width: 1300px;
     padding: 0 40px;
     margin: auto;
     display: flex;
@@ -187,4 +188,36 @@
     /* width: 180px;
     border: 1px solid;
     border-radius: 10px; */
+}
+
+/* Make page responive */
+@media screen and (max-width: 980px) {
+    .menu-toggler {
+        display: block;
+    }
+
+    .navbar-menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        right: -100%;
+        background-color: #253237;
+        padding: 100px 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        transition: .3s linear;
+        text-align: center
+    }
+
+    .navbar-menu a {
+        width: 100%;
+        font-size: 50px;
+    }
+
+    .active {
+        right: 0;
+    }
 }
