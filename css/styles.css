@@ -97,6 +97,9 @@
     background-image: url(../images/);
 } */
 
+/* .sticky .navbar-menu a {
+} */
+
 /* Landing photo, social media links and calls to action */
 #home {
     height: 100vh;
@@ -132,7 +135,7 @@
     margin-bottom: 60px;
 }
 
-
+/* OPTIONAL ANIMATION BELOW */
 /* This part is optional, maybe for additional features */
 #home .content h1::after {
     content: "#";
@@ -151,6 +154,7 @@
     }
 }
 
+/* Socail media links */
 .sm a {
     color: white;
     font-size: 30px;
