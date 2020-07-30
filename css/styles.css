@@ -123,6 +123,7 @@
     text-align: center;
     flex-direction: column;
     background-color: #25323779;
+    padding-top: 200px;
 }
 
 .home .content {
@@ -244,6 +245,10 @@
 
 /* Mobile phones */
 @media screen and (max-width: 450px) {
+    #home .inner-width {
+        padding: 0;
+    }
+
     #home .content h1 {
         margin-top: 180px;
         font-size: 60px;
@@ -264,6 +269,10 @@
 
 /* Mobile phones landscape mode */
 @media screen and (max-height: 450px) {
+    #home .inner-width {
+        padding: 0;
+    }
+
     #home {
         min-height: 0;
     }
@@ -274,7 +283,7 @@
 
     #home .content h1 {
         font-size: 50px;
-        margin-bottom: 10px;
+        margin: 0 10px 10px;
     }
 
     #home .buttons {
