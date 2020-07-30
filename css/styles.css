@@ -1,20 +1,23 @@
+/* Set up global variables */
 :root {
     --gold: #e6b102;
     --gray: #253237;
 }
 
+/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     color: black;
-    font-family: Gruppo, Arial, Helvetica, sans-serif;
+    font-family: 'Gruppo', Arial, Helvetica, sans-serif;
 }
 
+/* Header and navigation bar */
 .navbar {
     position: fixed;
-    background-color: var(--gray);
+    background-color: transparent;
     width: 100%;
     padding: 30px 0;
     top: 0;
@@ -46,43 +49,60 @@
     border-radius: 50%;
 }
 
+/* Hamburger bar */
 .menu-toggler {
     background: none;
-    width: 30px;
+    width: 40px;
     border: none;
     cursor: pointer;
     position: relative;
     outline: none;
     z-index: 999;
+    display: none;
 }
 
+/* The "buns" and "burger" */
 .menu-toggler span {
     display: block;
     height: 3px;
     background-color: white;
-    margin: 6px 0;
+    margin: 8px 0;
     position: relative;
     transform: .3s linear;
 }
 
+/* Menu items */
 .navbar-menu a {
     color: white;
     font-size: 20px;
     /* useful if you're using Ubuntu font or a font with all the weights */
     /* font-weight: 500; */
-    margin-left: 30px;
+    margin-left: 15px;
     transition: .2s linear;
+    padding: 15px;
 }
 
 .navbar-menu a:hover {
     color: var(--gold);
 }
 
+/* Menu when scrolling down */
+.sticky {
+    background-color: var(--gray);
+    padding: 18px 0;
+}
+
+/* If you want a different logo when you scroll down, change here */
+/* .sticky .logo {
+    background-image: url(../images/);
+} */
+
+/* Landing photo, social media links and calls to action */
 #home {
     height: 100vh;
     min-height: 500px;
     background: url(../images/gyuto-wood-whole-diagonal-3d.jpg) no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-size: cover;
     /* Play around with background-position to adjust the background img */
     /* background-position: bottom left; */
@@ -135,12 +155,32 @@
     color: white;
     font-size: 30px;
     margin: 0 20px;
-    transition: .2s linear;
-    padding: 10px;
+    transition: .3s linear;
+    padding: 15px;
 }
 
-.sm a:hover {
-    background-color: var(--gray);
+.sm a:hover,
+/* .navbar-menu a:hover, */
+#home .buttons a:hover {
+    background-color: #253237c9;
+    /* background-color: var(--gray); */
+    /* color: white; */
     color: var(--gold);
     border-radius: 10px;
+}
+
+#home .buttons {
+    margin-top: 60px;
+}
+
+#home .buttons a {
+    display: inline-block;
+    margin: 15px 30px;
+    color: white;
+    font-size: 20px;
+    transition: 0.3s linear;
+    padding: 15px;
+    /* width: 180px;
+    border: 1px solid;
+    border-radius: 10px; */
 }
