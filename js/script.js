@@ -11,4 +11,5 @@ window.addEventListener('scroll', () => {
 // toggle menu on hamburger click
 menuToggler.addEventListener('click', () => {
     navbarMenu.classList.toggle('active');
+    menuToggler.classList.toggle('active');
 });

@@ -41,8 +41,8 @@
 }
 
 .logo {
-    width: 44px;
-    height: 44px;
+    width: 50px;
+    height: 50px;
     background-image: url(../images/logo.jpg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -65,11 +65,11 @@
 /* The "buns" and "burger" */
 .menu-toggler span {
     display: block;
-    height: 3px;
+    height: 4px;
     background-color: white;
     margin: 8px 0;
     position: relative;
-    transform: .3s linear;
+    transition: .3s linear;
 }
 
 /* Menu items */
@@ -134,16 +134,18 @@
     font-size: 80px;
     color: var(--gold);
     margin-bottom: 60px;
+    box-shadow: 0px 0px 80px 69px #25323726;
+    background-color: #25323726;
 }
 
 /* OPTIONAL ANIMATION BELOW */
 /* This part is optional, maybe for additional features */
-#home .content h1::after {
+/* #home .content h1::after {
     content: "#";
-    /* animation: textchange 10s linear infinite; */
-}
+    animation: textchange 10s linear infinite;
+} */
 
-@keyframes textchange {
+/* @keyframes textchange {
     25% {
         content: "*";
     }
@@ -153,7 +155,7 @@
     75% {
         content: "@";
     }
-}
+} */
 
 /* Socail media links */
 .sm a {
@@ -190,8 +192,13 @@
     border-radius: 10px; */
 }
 
-/* Make page responive */
+/* Mobile phone and tablets */
 @media screen and (max-width: 980px) {
+    #home .content h1 {
+        font-size: 70px;
+
+    }
+
     .menu-toggler {
         display: block;
     }
@@ -217,7 +224,33 @@
         font-size: 50px;
     }
 
-    .active {
+    .navbar-menu.active {
         right: 0;
+    }
+
+    .menu-toggler.active span:nth-child(1) {
+        transform: rotate(-45deg);
+        top: 6px;
+    }
+
+    .menu-toggler.active span:nth-child(2) {
+        display: none;
+    }
+
+    .menu-toggler.active span:last-child {
+        transform: rotate(45deg);
+        bottom: 6px;
+    }
+}
+
+/* Mobile phones */
+@media screen and (max-width: 450px) {
+    #home .content h1 {
+        margin-top: 180px;
+        font-size: 60px;
+    }
+
+    #home {
+        background-image: ;
     }
 }
