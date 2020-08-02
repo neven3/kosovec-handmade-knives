@@ -76,7 +76,7 @@
 /* Menu items */
 .navbar-menu a {
     color: white;
-    font-size: 20px;
+    font-size: 25px;
     /* useful if you're using Ubuntu font or a font with all the weights */
     /* font-weight: 500; */
     margin-left: 15px;
@@ -111,7 +111,8 @@
     background-size: cover;
     /* Play around with background-position to adjust the background img */
     /* background-position: bottom left; */
-    background-position: center;
+    /* background-position: center; */
+    background-position: 0 -370px;
     overflow: hidden;
 }
 
@@ -294,6 +295,10 @@ p {
 
 /* Mobile phone and tablets */
 @media screen and (max-width: 980px) {
+    #home {
+        background-position: center;
+    }
+
     #home .content h1 {
         font-size: 70px;
     }
