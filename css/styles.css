@@ -110,7 +110,7 @@
     /* background-attachment: fixed; */
     background-size: cover;
     /* Play around with background-position to adjust the background img */
-    /* background-position: bottom left; */
+    /* background-position: bottom right; */
     /* background-position: center; */
     background-position: 0 -370px;
     overflow: hidden;
@@ -320,12 +320,14 @@ p {
         justify-content: space-around;
         flex-wrap: wrap;
         transition: .3s linear;
-        text-align: center
+        text-align: center;
+        overflow: scroll;
     }
 
     .navbar-menu a {
         width: 100%;
         font-size: 50px;
+        margin-left: 0;
     }
 
     .navbar-menu.active {
