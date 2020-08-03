@@ -3,6 +3,9 @@
     --gold: #e6b102;
     --gray: #253237;
     --off-white: #ebebeb;
+    /* Two dark background candidates */
+    --dark-background: #3d494e;
+    --onyx: #353B3C;
 }
 
 /* Reset CSS */
@@ -204,6 +207,10 @@
 
 .navbar {
     display: none;
+}
+
+section#about {
+    display: none;
 } */
 
 /******************************************************** 
@@ -293,6 +300,59 @@ p {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 
+/**************************************************************
+    Dark sections
+**************************************************************/
+
+section.dark:not(#home) {
+    background-color: var(--dark-background);
+    /* background-color: #4a5a5f; */
+    /* background-color: var(--onyx); */
+}
+
+section.dark .section-title {
+    color: var(--off-white);
+}
+
+section.dark .section-title::before {
+    background-color: var(--off-white);
+    /* background-color: var(--gold); */
+}
+
+section.dark .section-title::after {
+    background-color: var(--gold);
+    /* background-color: #558C8C; */
+    border-color: var(--dark-background);
+    /* border-color: #253237c9; */
+    /* border-color: #4a5a5f; */
+    /* border-color: var(--onyx); */
+}
+
+/****************************************************************
+    GALLERY SECTION
+****************************************************************/
+
+.gallery-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.gallery-pic {
+    width: calc(33% - 10px);
+    overflow: hidden;
+    border-radius: 6px;
+    margin: 10px 0;
+    position: relative;
+}
+
+.gallery-pic img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
 /* Mobile phone and tablets */
 @media screen and (max-width: 980px) {
     #home {
@@ -313,7 +373,7 @@ p {
         width: 100%;
         top: 0;
         right: -100%;
-        background-color: #253237;
+        background-color: var(--gray);
         padding: 100px 50px;
         display: flex;
         align-items: center;
