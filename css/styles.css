@@ -359,7 +359,7 @@ section.dark .section-title::after {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #e6b10234;
+    background-color: #8a867834;
     z-index: 1;
     transform: scale(0);
     transition: 0.2s linear;
