@@ -1,6 +1,7 @@
 const navbar = document.querySelector('.navbar');
 const navbarMenu = document.querySelector('.navbar-menu');
 const menuToggler = document.querySelector('.menu-toggler');
+const galleryContent = document.querySelector('.gallery-content');
 
 // change navbar style on scroll
 window.addEventListener('scroll', () => {
@@ -12,4 +13,10 @@ window.addEventListener('scroll', () => {
 menuToggler.addEventListener('click', () => {
     navbarMenu.classList.toggle('active');
     menuToggler.classList.toggle('active');
+});
+
+$('.gallery-content').magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    gallery: {enabled: true}
 });
