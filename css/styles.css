@@ -209,7 +209,8 @@
     display: none;
 }
 
-section#about {
+section#about,
+section#gallery {
     display: none;
 } */
 
