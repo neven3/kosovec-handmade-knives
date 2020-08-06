@@ -201,7 +201,7 @@
 /********************************************************
             JUST SO IT'S EASIER TO WORK!!!
 *********************************************************/
-section#home {
+/* section#home {
     display: none;
 }
 
@@ -212,7 +212,7 @@ section#home {
 section#about,
 section#gallery {
     display: none;
-}
+} */
 
 /******************************************************** 
             WATCH OUT !!! 
@@ -467,13 +467,13 @@ p.gallery-pic-info-optional-text {
     outline: none;
     border: none;
     border-radius: 4px;
-    padding: 0 10px;
+    padding: 0 20px;
     /* font-size: 20px; */
 }
 
 .contact-form textarea {
-    padding: 10px;
-    height: 100px;
+    padding: 20px;
+    height: 150px;
 }
 
 .contact-form label[for="message"] {
@@ -486,6 +486,7 @@ p.gallery-pic-info-optional-text {
     color: var(--gold);
     font-size: 18px;
     transition: .3s linear;
+    /* border: 5px solid #558C8C; */
 }
 
 .contact-form .btn:hover {
