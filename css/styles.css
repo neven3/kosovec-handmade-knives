@@ -500,9 +500,10 @@ p.gallery-pic-info-optional-text {
 }
 
 .contact-form .btn:hover {
-    background-color: #558C8C;
+    /* background-color: #558C8C; */
+    background-color: var(--gold);
     border: none;
-    color: var(--gold);
+    /* color: var(--gold); */
 }
 
 /**********************************************************
@@ -510,15 +511,29 @@ p.gallery-pic-info-optional-text {
 ***********************************************************/
 
 footer {
-    padding: 80px 0;
-    text-align: center;
-    font-size: 20px;
+    width: 100%;
     background-color: var(--gray);
-    color: var(--off-white);
+    padding: 20px 0;
 }
 
-footer a {
+footer .inner-width {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    color: var(--off-white);
+    text-align: center;
+}
+
+.copyright a {
+    font-size: 16px;
     text-decoration: none;
+    color: var(--gold);
+}
+
+.copyright p {
+    font-size: 12px;
 }
 
 footer .copyright a:visited {
@@ -669,6 +684,35 @@ footer .copyright a:visited {
 
     .gallery-pic {
         width: 100%;
+    }
+
+    .contact-info-item {
+        width: 100%;
+    }
+
+    .contact-form label {
+        width: 100%;
+    }
+
+    .contact-form textarea {
+        height: 250px;
+    }
+
+    .contact-form .btn {
+        width: 100%;
+    }
+
+    footer .inner-width {
+        flex-direction: column;
+    }
+
+    footer .sm {
+        margin: 20px auto;
+    }
+
+    .copyright p,
+    .copyright a {
+        font-size: 12px;
     }
 }
 
