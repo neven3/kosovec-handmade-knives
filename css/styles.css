@@ -305,13 +305,15 @@ p {
     Dark sections
 **************************************************************/
 
-section.dark:not(#home) {
+section.dark:not(#home),
+footer.dark {
     background-color: var(--dark-background);
     /* background-color: #4a5a5f; */
     /* background-color: var(--onyx); */
 }
 
-section.dark .section-title {
+section.dark .section-title,
+footer.dark {
     color: var(--off-white);
 }
 
@@ -399,6 +401,97 @@ p.gallery-pic-info-optional-text {
 .gallery-pic:hover .gallery-pic-info {
     opacity: 1;
 }
+
+/***************************************************************
+    CONTACT SECTION
+***************************************************************/
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-info-item {
+    width: calc(33% - 20px);
+    height: 160px;
+    background-color: var(--dark-background);
+    color: var(--off-white);
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .3s linear;
+    margin: 20px 10px;
+}
+
+.contact-info i {
+    display: block;
+    font-size: 40px;
+    line-height: 120px;
+    height: 100px;
+}
+
+.contact-info-item-text {
+    font-family: 'Gruppo';
+    font-size: 25px;
+}
+
+.contact-info-item:hover {
+    background-color: #558C8C;
+}
+
+.contact-info-item:hover .contact-info-item-text {
+    color: var(--gold);
+}
+
+.contact-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-form label {
+    width: calc(50% - 10px);
+    margin-top: 20px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+    font-family: 'Montserrat';
+    background-color: var(--dark-background);
+    color: var(--off-white);
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding: 0 10px;
+    /* font-size: 20px; */
+}
+
+.contact-form textarea {
+    padding: 10px;
+    height: 100px;
+}
+
+.contact-form label[for="message"] {
+    width: 100%;
+}
+
+.contact-form .btn {
+    cursor: pointer;
+    /* background-color: #558C8C; */
+    color: var(--gold);
+    font-size: 18px;
+    transition: .3s linear;
+}
+
+.contact-form .btn:hover {
+    background-color: #558C8C;
+}
+
 
 /* Mobile phone and tablets */
 @media screen and (max-width: 980px) {

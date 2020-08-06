@@ -183,21 +183,84 @@
             <div class="contact-info">
                 <div class="contact-info-item">
                     <i class="fas fa-mobile-alt"></i>
-                    +1234567890
+                    <p class="contact-info-item-text">
+                        +1234567890
+                    </p>
                 </div>
 
                 <div class="contact-info-item">
                     <i class="fas fa-envelope"></i>
-                    email@email.com
+                    <p class="contact-info-item-text">
+                        email@email.com
+                    </p>
                 </div>
 
                 <div class="contact-info-item">
                     <i class="fas fa-map-marker-alt"></i>
-                    City, Country
+                    <p class="contact-info-item-text">
+                        City, Country
+                    </p>
                 </div>
             </div>
+
+            <form action="#" class="contact-form">
+                <label for="first-name">
+                    <p class="input-desc">Name</p>
+                    <input type="text" id="first-name" name="first-name" required placeholder="Your Full Name">
+                </label>
+
+                <!-- <label for="first-name">
+                    <p class="input-desc">First name*</p>
+                    <input type="text" id="first-name" name="first-name" required placeholder="Your First Name">
+                </label> -->
+
+                <!-- <label for="last-name">
+                    <p class="input-desc">Last name*</p>
+                    <input type="text" id="last-name" name="last-name" required placeholder="Your Last Name">
+                </label> -->
+                
+
+                <label for="email">
+                    <p class="input-desc">Email</p>
+                    <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                </label>
+
+                <!-- <label for="phone">
+                    <p class="input-desc">Phone number (optional)</p>
+                    <input type="tel" id="phone" name="phone" placeholder="Your number here">
+                </label> -->
+
+                <!-- <label for="subject">
+                    <p class="input-desc">Subject</p>
+                    <input type="text" name="subject" id="subject" required>
+                </label> -->
+                
+                <label for="message">
+                    <p class="input-desc">Your message</p>
+                    <textarea name="message" id="message" placeholder="Message" required></textarea>
+                </label>
+
+                <button type="submit" class="btn">Send</button>
+
+            </form>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="dark">
+        <div class="inner-width">
+            <div class="copyright">
+                &copy; 2020 | Created By <a href="https://github.com/neven3">Neven</a>
+            </div>
+            <div class="sm">
+                <a href="" class="fab fa-facebook-f"></a>
+                <a href="" class="fab fa-instagram"></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Go to top button -->
+    <button class="go-top fa-arrow-up"></button>
 
     <script src="./js/script.js"></script>
 </body>
