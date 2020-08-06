@@ -2,11 +2,19 @@ const navbar = document.querySelector('.navbar');
 const navbarMenu = document.querySelector('.navbar-menu');
 const menuToggler = document.querySelector('.menu-toggler');
 const galleryContent = document.querySelector('.gallery-content');
+const goTopButton = document.querySelector('.go-top');
 
 // change navbar style on scroll
 window.addEventListener('scroll', () => {
-    if (scrollY > 20) navbar.classList.add('sticky');
-    else navbar.classList.remove('sticky');
+    if (scrollY > 20) {
+        navbar.classList.add('sticky');
+        goTopButton.style.opacity = 1;
+        goTopButton.style.pointerEvents = 'initial';
+    } else {
+        navbar.classList.remove('sticky');
+        goTopButton.style.opacity = 0;
+        goTopButton.style.pointerEvents = 'none';
+    }
 });
 
 // toggle menu on hamburger click
@@ -15,6 +23,10 @@ menuToggler.addEventListener('click', () => {
     menuToggler.classList.toggle('active');
 });
 
+// add move-to-top functionality to goToTopButton
+goTopButton.addEventListener('click', () => scroll(0,0));
+
+// jQuery for Magnific Popup
 $('.gallery-content').magnificPopup({
     delegate: 'a',
     type: 'image',
