@@ -23,6 +23,13 @@ menuToggler.addEventListener('click', () => {
     menuToggler.classList.toggle('active');
 });
 
+navbarMenu.addEventListener('click', (event) => {
+    if (event.target.tagName.toLowerCase() === 'a') {
+        navbarMenu.classList.toggle('active');
+        menuToggler.classList.toggle('active');
+    }
+});
+
 // add move-to-top functionality to goToTopButton
 goTopButton.addEventListener('click', () => scroll(0,0));
 
