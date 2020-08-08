@@ -4,6 +4,10 @@ const menuToggler = document.querySelector('.menu-toggler');
 const galleryContent = document.querySelector('.gallery-content');
 const goTopButton = document.querySelector('.go-top');
 
+if (innerWidth / innerHeight > 1.196 && innerWidth / innerHeight < 2) {
+    document.querySelector('#home').style.backgroundPosition = 'bottom';
+}
+
 // change navbar style on scroll
 window.addEventListener('scroll', () => {
     if (scrollY > 20) {
